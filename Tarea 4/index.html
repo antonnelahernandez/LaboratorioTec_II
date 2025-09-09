@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Región Metropolitana</title>
+    <style>
+        .mapa path:hover{
+            fill: #d11b5e;
+        }
+
+        .etiqueta{
+            border: 1px solid #101010;
+            width: 180px;
+            height: 60px; 
+            background-color: white;
+            display: flex;
+            position: absolute;
+            pointer-events: none;
+            font-family: "Literata", serif;
+        }
+        .etiqueta p{
+            margin: auto;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <svg width="500" height="500">
+        <g class="mapa"></g>
+    </svg>
+    <script src="./script.js" type="module"></script>
+</body>
+</html>
